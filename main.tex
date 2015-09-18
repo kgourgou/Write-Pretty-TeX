@@ -1,0 +1,48 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{amsmath}
+\usepackage{enumitem, xcolor}
+\usepackage{libertine}
+
+\title{Guidelines to give your math paper a better look}
+\date{}
+
+\usepackage{enumitem}
+\setlist{parsep=0pt,listparindent=\parindent}
+
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\section{Math mode}
+
+\begin{itemize}
+\item Avoid big symbols and fractions when possible. For example,
+
+$$
+\frac{1}{2}\int_{0}^1 f(x)dx
+$$
+looks great but
+\begin{align}
+\frac{\int_{0}^1 f(x)dx}{2}
+\label{eq:intOnFrac}
+\end{align}
+not so much. The situation will be worse when you try to align many equations like Eq.~\eqref{eq:intOnFrac}.
+
+\end{itemize}
+
+
+\section{Figures}
+\begin{itemize}
+
+\item \textbf{All} figures should have \textbf{labeled} axes. If multiple objects appear on the same figure, add a caption \textbf{and} a legend. Remember : Some people only read captions.
+
+\item Change the font size in plots so that it is comparable to that of the rest of the text. This is especially important for presentations. 
+\end{itemize}
+
+
+
+
+
+\end{document}
